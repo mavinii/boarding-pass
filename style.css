@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -0.02em;
+
+    background: linear-gradient(167.96deg, #caf0f8 0%, #03045e 100%) no-repeat;
+    
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+/* Util class - like tailwind: https://tailwindcss.com */
+.grid {
+    display: grid;
+}
+
+.column {
+    grid-auto-flow: column;
+}
+
+.text-right {
+    text-align: right;
+}
+
+h1,
+strong {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    color: #000;
+    opacity: 0.5;
+}
+
+strong {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+section {
+    background-color: #fff;
+    padding: 2.4rem 2.4rem;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+#boarding-pass {
+    max-width: 32.7rem;
+    margin: 0 auto;
+}
+
+#ticket {
+    margin-top: 2rem;
+}
+
+.top {
+    border-radius: 2.5rem 2.5rem 0 0;
+    gap: 2.5rem;
+
+    --mask: radial-gradient(1.2rem at 1.2rem bottom, #0000 93%, black) -1.2rem;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+}
+
+.departure, .arrival {
+    width: 12.5rem;
+
+}
+
+.departure strong, 
+.arrival strong {
+    font-size: 4rem;
+    line-height: 1.8rem;
+
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.airplane {
+    align-self: center;
+}
+
+.middle {
+    border: 1px dashed rgba(0, 0, 0, 0.32);
+    border-left: 0;
+    border-right: 0;
+
+    --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
+}
+
+.bottom {
+    border-radius: 0 0 2.5rem 2.5rem;
+
+    --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+}
+
+.bottom .container {
+    align-items: center;
+    gap: .8rem;
+}
+
+dl.grid {
+    gap: 1.6rem;
+    min-width: 9.6rem;
+}
+
+dt time {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    background-color: #0077b6;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    display: inline-block; 
+    margin-top: .2rem;
+}
+
+.bottom > p {
+    text-align: center;
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    color:  rdba(0, 0, 0, 0.8);
+    line-height: 2.2rem;
+}
+
+.qr-code p {
+    margin-top: .6rem;
+}
+
+footer {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem auto;
+    text-align: center;
+    opacity: 0.7; 
+}

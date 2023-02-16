@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding Pass</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- main div -->
+    <div id="boarding-pass">
+
+        <!-- Title with logo -->
+        <h1>This is your boarding pass</h1>
+
+        <!-- main body -->
+        <main id="ticket">
+            <section class="top grid">
+
+                <!-- Fligth Number and Data -->
+                <div class="fligth grid column">
+                    <div class="number">
+                        <p>Fligth</p>
+                        <strong>RS995</strong>
+                    </div>
+                    <div class="date text-right">
+                        <p>Date</p>
+                        <strong>16/02/2023</strong>
+                    </div>
+                </div>
+
+                <!-- Detarture and Arrival -->
+                <div class="grid column">
+                    <div class="departure grid">
+                        <p>Dublin, Ireland</p>
+                        <strong>DUB</strong>
+                        <time>17:00pm</time>
+                    </div>
+                    <div class="airplane grid">
+                        <img src="./assets/arplane-icon.svg" alt="Airplane Icon">
+                    </div>
+                    <div class="arrival text-right grid">
+                        <p>Sao Paulo, Brazil</p>
+                        <strong>GRU</strong>
+                        <time>11:30am <sup>+3</sup></time>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Name and Seat -->
+            <section class="middle grid column">
+                <div class="name">
+                    <p>Passanger</p>
+                    <strong>John Doe</strong>
+                </div>
+                <div class="seat text-right">
+                    <p>Seat</p>
+                    <strong>12A</strong>
+                </div>
+            </section>
+            
+            <!-- Boarding Info and QR Code -->
+            <section class="bottom">
+                <div class="container grid column">
+                    <dl class="grid">
+                        <dt>
+                            <p>Boarding Time</p>
+                            <time>16:30pm</time>
+                        </dt>
+                        <dt>
+                            <p>Gate</p>
+                            <strong>12</strong>
+                        </dt>
+                        <dt>
+                            <p>Terminal</p>
+                            <strong>2</strong>
+                        </dt>
+                    </dl>
+                    <div class="qr-code text-right">
+                        <img src="./assets/qr-code.svg" alt="QR Code">
+                        <p>Departure group: 3</p>
+                    </div>
+                </div>
+                
+                <p><strong>Attention:</strong> please be at the gate 35 minutes before departure.</p>
+            </section>
+        </main>
+
+        <!-- Aditional information -->
+        <footer>
+            If you are finding any problem, please call: +123 456 789, or email us at example@example.com.
+        </footer>
+    </div>
+</body>
+</html>
